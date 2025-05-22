@@ -53,7 +53,7 @@ schoolRouter.post('/addSchool', (req, res) => {
 });
 
 
-// @route POST /api/v1/schoolRoute/listSchools
+// @route GET /api/v1/schoolRoute/listSchools
 // @des   get schools nearer to user
 schoolRouter.get('/listSchools', (req, res) => {
 
