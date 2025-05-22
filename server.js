@@ -5,7 +5,9 @@ const app = express();
 
 connect_db();
 app.use(express.json());
+
 app.use('/api/v1/schoolRoute', schoolRouter);
+
 app.get('/test', (req, res) => {
     res.json({
         success: true,
