@@ -15,6 +15,13 @@ app.get('/test', (req, res) => {
     })
 })
 
+app.get('/', (req, res) => {
+    res.json({
+        success: true,
+        message: "Don't worrry it is working ... "
+    })
+})
+
 app.listen(80, () => {
     console.log('server is runing', 80);
 })
